@@ -1,0 +1,9 @@
+libdir=C:/opencv/lib/
+includedir=C:/opencv/include/
+
+Name: OpenCV
+Description: Computer Vision Library
+Version: 3.0
+Requires: 
+Libs: -L${libdir} -lopencv_core300 -lopencv_imgproc300 
+Cflags: -I${includedir}
