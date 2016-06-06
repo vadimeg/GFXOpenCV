@@ -1,0 +1,6 @@
+Замечено, что использование __sec_reduce_add в gfx_kernel функции при сборке для x86-64 (windows 10, visual studio 13, стандартная конфигурация "X64", icc 16.0 upd. 2) с установленными ключами /Qgpu-arch=ivybridge, /Qoffload-arch:ivybridge:visa3.0 приводит к ошибке (при компиляции) "gfx_linker: 7 error : all vISA objects should have the same versions"
+
+В примере содержательно, что stride = 3 - при значениях из [1, 2, 4, 8] ошибка не наблюдалась.
+Содержательно, что param не является константой.
+
+Замечено, что использование конфигурации X86 или ключей /Qgpu-arch=haswell, /Qoffload-arch:haswell:visa3.1 к ошибке не приводит.
